@@ -34,6 +34,13 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Verify Pages assets
+        run: |
+          test -f dist/images/sosna-portrait.png
+          test -f dist/cv/Sosna-Adugna-CV.pdf
+          grep -R -q '/New-Portfolio/images/sosna-portrait.png' dist/assets
+          grep -R -q '/New-Portfolio/cv/Sosna-Adugna-CV.pdf' dist/assets
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -46,6 +53,19 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
+      - name: Check out the latest main commit
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: Refuse stale deployments
+        run: |
+          if [ "$GITHUB_SHA" != "$(git rev-parse HEAD)" ]; then
+            echo "::error::This workflow run is not for the latest main commit; start a new deployment from main."
+            exit 1
+          fi
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
