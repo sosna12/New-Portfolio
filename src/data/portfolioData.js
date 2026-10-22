@@ -73,7 +73,7 @@ export const skillGroups = [
 export const projects = [
   {
     title: 'Personal Developer Portfolio',
-    image: '/images/project-portfolio.png',
+    image: `${import.meta.env.BASE_URL}images/project-portfolio.png`,
     problem: 'Needed a clean digital presence that clearly communicates my technical skills and project work to recruiters and potential clients.',
     features: ['Responsive portfolio layout', 'Section-based storytelling', 'Strong call-to-action design'],
     technologies: ['HTML', 'CSS', 'JavaScript'],
@@ -82,7 +82,7 @@ export const projects = [
   },
   {
     title: 'Weather Forecast Application',
-    image: '/images/project-weather.png',
+    image: `${import.meta.env.BASE_URL}images/project-weather.png`,
     problem: 'Wanted a simple interface to check current weather and forecast conditions using live data from an external API.',
     features: ['Live weather lookup', 'City-based search', 'Clean dashboard presentation'],
     technologies: ['Python', 'Flask', 'OpenWeather API'],
@@ -91,7 +91,7 @@ export const projects = [
   },
   {
     title: 'Smart Electronics E-Commerce Web Application',
-    image: '/images/project-ecommerce.png',
+    image: `${import.meta.env.BASE_URL}images/project-ecommerce.png`,
     problem: 'Needed a functional e-commerce experience for electronic products with a database-driven product flow and user-friendly browsing.',
     features: ['Product catalog', 'Database-backed listings', 'Web application structure'],
     technologies: ['Java Servlets', 'JSP', 'MySQL'],
@@ -100,7 +100,7 @@ export const projects = [
   },
   {
     title: 'Consulting Company Website',
-    image: '/images/project-consulting.png',
+    image: `${import.meta.env.BASE_URL}images/project-consulting.png`,
     problem: 'Required a modern business web presence for presenting services, trust-building content, and clear contact points.',
     features: ['Professional layout', 'Responsive design', 'Service-focused presentation'],
     technologies: ['React', 'JavaScript', 'CSS'],

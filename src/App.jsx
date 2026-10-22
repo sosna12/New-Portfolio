@@ -425,7 +425,7 @@ function App() {
               <div className="orb orb-one" aria-hidden="true" />
               <div className="orb orb-two" aria-hidden="true" />
               <div className="portrait-card">
-                <img src="/images/sosna-portrait.png" alt="Sosna Adugna" />
+                <img src={`${import.meta.env.BASE_URL}images/sosna-portrait.png`} alt="Sosna Adugna" />
               </div>
               <div className="floating-badge">
                 <MapPin size={14} />
@@ -457,7 +457,7 @@ function App() {
                   <strong>{personalInfo.objective}</strong>
                 </div>
               </div>
-              <a href="/cv/Sosna-Adugna-CV.pdf" className="btn btn-primary btn-large" download>
+              <a href={`${import.meta.env.BASE_URL}cv/Sosna-Adugna-CV.pdf`} className="btn btn-primary btn-large" download>
                 <Download size={18} />
                 Download CV
               </a>
