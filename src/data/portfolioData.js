@@ -78,7 +78,7 @@ export const projects = [
     features: ['Responsive portfolio layout', 'Section-based storytelling', 'Strong call-to-action design'],
     technologies: ['HTML', 'CSS', 'JavaScript'],
     demo: 'https://sosna12.github.io/MyPortfolio/',
-    source: '#',
+    source: 'https://github.com/sosna12/MyPortfolio',
   },
   {
     title: 'Weather Forecast Application',
@@ -87,7 +87,7 @@ export const projects = [
     features: ['Live weather lookup', 'City-based search', 'Clean dashboard presentation'],
     technologies: ['Python', 'Flask', 'OpenWeather API'],
     demo: 'https://weatherappsosna.onrender.com/',
-    source: 'https://github.com/sosna12/WeatherApp',
+    source: 'https://github.com/sosna12/weather_app',
   },
   {
     title: 'Smart Electronics E-Commerce Web Application',
