@@ -1,0 +1,23 @@
+<svg width="720" height="720" viewBox="0 0 720 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="80" x2="620" y2="640" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#1E3A8A"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="180" y1="180" x2="540" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7DD3FC"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="720" rx="42" fill="url(#bg)"/>
+  <circle cx="367" cy="272" r="160" fill="url(#accent)" opacity="0.18"/>
+  <circle cx="360" cy="232" r="110" fill="#E2E8F0"/>
+  <path d="M264 600C276.369 515.147 314.228 471 374 471C432.669 471 473.381 515.147 482 600H264Z" fill="#E2E8F0"/>
+  <path d="M285 206C285 145.467 332.467 98 393 98C453.533 98 501 145.467 501 206V245H285V206Z" fill="#0F172A"/>
+  <circle cx="337" cy="240" r="10" fill="#111827"/>
+  <circle cx="432" cy="240" r="10" fill="#111827"/>
+  <path d="M338 292C351.536 314.18 378.647 330 405.5 330C430.871 330 454.965 317.753 468 296" stroke="#0F172A" stroke-width="12" stroke-linecap="round"/>
+  <rect x="120" y="116" width="120" height="36" rx="18" fill="#7DD3FC" opacity="0.24"/>
+  <rect x="520" y="120" width="86" height="26" rx="13" fill="#8B5CF6" opacity="0.22"/>
+  <rect x="520" y="168" width="62" height="24" rx="12" fill="#7DD3FC" opacity="0.2"/>
+</svg>
